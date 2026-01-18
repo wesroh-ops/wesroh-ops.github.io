@@ -1,3 +1,46 @@
+// 커서 블러 효과
+let cursorBlur = null;
+
+function initCursorBlur() {
+    // 커서 블러 요소 생성
+    cursorBlur = document.createElement('div');
+    cursorBlur.className = 'cursor-blur';
+    document.body.appendChild(cursorBlur);
+
+    // 마우스 이동 이벤트
+    document.addEventListener('mousemove', (e) => {
+        if (cursorBlur) {
+            cursorBlur.style.left = e.clientX + 'px';
+            cursorBlur.style.top = e.clientY + 'px';
+            cursorBlur.classList.add('active');
+        }
+    });
+
+    // 마우스가 화면을 벗어날 때 블러 제거
+    document.addEventListener('mouseleave', () => {
+        if (cursorBlur) {
+            cursorBlur.classList.remove('active');
+        }
+    });
+
+    // 클릭 가능한 요소에서 블러 크기 조정
+    const interactiveElements = document.querySelectorAll('a, button, .nav-link, .tab-button, .contact-button, .cta-button');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            if (cursorBlur) {
+                cursorBlur.style.width = '1200px';
+                cursorBlur.style.height = '1200px';
+            }
+        });
+        el.addEventListener('mouseleave', () => {
+            if (cursorBlur) {
+                cursorBlur.style.width = '800px';
+                cursorBlur.style.height = '800px';
+            }
+        });
+    });
+}
+
 // Intersection Observer for Section Animations
 const observerOptions = {
     threshold: 0.1,
@@ -15,6 +58,8 @@ const observer = new IntersectionObserver((entries) => {
 
 // Initialize sections with fade-in animation
 document.addEventListener('DOMContentLoaded', () => {
+    // 커서 블러 효과 초기화
+    initCursorBlur();
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
         section.style.opacity = '0';
