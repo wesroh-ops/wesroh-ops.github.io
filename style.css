@@ -266,12 +266,35 @@ body {
     margin-bottom: 10px;
 }
 
-.hero-title {
-    font-size: clamp(30px, 6vw, 60px);
-    font-weight: 700;
+.hero-name-en {
+    font-size: clamp(20px, 4vw, 32px);
+    font-weight: 400;
     color: var(--slate);
-    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.hero-title {
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 600;
+    color: var(--light-slate);
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle {
+    color: var(--green);
+    font-size: var(--fz-lg);
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.hero-tags {
+    color: var(--slate);
+    font-size: var(--fz-md);
+    font-weight: 400;
     margin-bottom: 30px;
+    opacity: 0.8;
 }
 
 .hero-description {
@@ -462,6 +485,20 @@ body {
     line-height: 1.8;
 }
 
+.education-info {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--lightest-navy);
+}
+
+.education-note {
+    color: var(--slate);
+    font-size: var(--fz-xs);
+    line-height: 1.6;
+    opacity: 0.7;
+    font-style: italic;
+}
+
 /* Experience Section */
 .experience-container {
     display: flex;
@@ -576,6 +613,29 @@ body {
     color: var(--green);
     font-size: var(--fz-md);
     line-height: 1.8;
+}
+
+.job-description-sub {
+    margin-top: 8px;
+    margin-left: 20px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.job-description-sub li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 6px;
+    color: var(--slate);
+    font-size: var(--fz-sm);
+}
+
+.job-description-sub li::before {
+    content: '▸';
+    position: absolute;
+    left: 5px;
+    color: var(--green);
+    font-size: var(--fz-sm);
 }
 
 /* Skills Section */
