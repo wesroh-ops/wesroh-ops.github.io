@@ -263,11 +263,11 @@ body {
     font-weight: 700;
     color: var(--lightest-slate);
     line-height: 1.1;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .hero-name-en {
-    font-size: clamp(20px, 4vw, 32px);
+    font-size: clamp(12px, 2.4vw, 19.2px);
     font-weight: 400;
     color: var(--slate);
     margin-left: 10px;
@@ -293,8 +293,12 @@ body {
     color: var(--slate);
     font-size: var(--fz-md);
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     opacity: 0.8;
+}
+
+.hero-tags + .hero-description {
+    margin-top: 1.5em;
 }
 
 .hero-description {
