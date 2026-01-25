@@ -85,6 +85,37 @@ body {
     backdrop-filter: blur(10px);
 }
 
+.language-switcher {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.lang-btn {
+    background-color: transparent;
+    border: 1px solid var(--lightest-navy);
+    color: var(--slate);
+    padding: 6px 12px;
+    font-size: var(--fz-xs);
+    font-family: var(--font-sans);
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: 3px;
+    min-width: 50px;
+}
+
+.lang-btn:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.lang-btn.active {
+    background-color: var(--green-tint);
+    border-color: var(--green);
+    color: var(--green);
+}
+
 .logo {
     min-width: 60px;
     width: auto;
@@ -919,6 +950,18 @@ body {
 
     .nav-link::after {
         display: none;
+    }
+
+    .language-switcher {
+        flex-direction: row;
+        gap: 5px;
+        margin-bottom: 15px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 10px;
+        min-width: 40px;
     }
 
     .main-wrapper {
