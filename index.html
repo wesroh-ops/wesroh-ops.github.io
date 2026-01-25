@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>노연호 | Supply Chain & Logistics Expert</title>
+    <title>노연호 박사 | Supply Chain & Logistics Expert</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,10 @@
 <body>
     <!-- 좌측 네비게이션 -->
     <nav class="sidebar">
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="ko">Kor</button>
+            <button class="lang-btn" data-lang="en">Eng</button>
+        </div>
         <div class="logo">
             <a href="#home">Y.H. Roh</a>
         </div>
@@ -35,12 +39,12 @@
                     <h2 class="hero-title">Supply Chain & Logistics System Architect</h2>
                     <p class="hero-subtitle">Ph.D. | 28+ Years Experience | WMS · TMS · WES · Automation Integration</p>
                     <p class="hero-tags">(Logistics Process Consulting · Operations Design · IT Architecture · PM)</p>
-                    <p class="hero-description">
+                    <p class="hero-description" data-i18n="hero-description">
                         Ph.D. in Supply Chain Logistics Management를 보유한 전문가로서, 현재는 WES(Warehouse Execution System)를 통한 
                         자동화 창고 최적화에 주력하고 있습니다. 대규모 IT 프로젝트 리드부터 학술 연구까지, 실무와 이론을 연결하여 
                         물류 산업의 디지털 전환과 효율성 향상을 추구합니다.
                     </p>
-                    <a href="#contact" class="cta-button">연락하기</a>
+                    <a href="#contact" class="cta-button" data-i18n="cta-button">연락하기</a>
                 </div>
                 <div class="hero-image-wrapper">
                     <div class="profile-image-container">
@@ -54,28 +58,28 @@
         <section id="about" class="section">
             <h2 class="section-heading">
                 <span class="section-number">01.</span>
-                <span class="section-title">About Me</span>
+                <span class="section-title" data-i18n="about-title">About Me</span>
             </h2>
             <div class="about-content">
                 <div class="about-wrapper">
                     <div class="about-text">
-                        <p>
+                        <p data-i18n="about-p1">
                             공급망 관리 및 물류 분야에서 28년 이상의 경험을 쌓아온 전문가로서, 
                             학술 연구와 산업 현장의 경계를 넘나드는 통합적 접근을 추구합니다.
                         </p>
-                        <p>
+                        <p data-i18n="about-p2">
                             LG CNS에서 20년간 IT 프로젝트 PM, PL, 분석·설계를 담당하며 물류 시스템 구축의 
                             실무 경험을 쌓았습니다. 우정사업본부 RFID 구축, 우편물류통합정보시스템, LG전자 TMS 구축, 
                             미국 Wal*Mart/Best Buy 대응 RFID 구축 등 다양한 대규모 프로젝트를 성공적으로 리드했습니다.
                         </p>
-                        <p>
+                        <p data-i18n="about-p3">
                             현재는 LX 판토스 팀장으로서 로봇/설비제어 WES, WCS, ECS 관련 시스템 구축에 주력하고 있습니다. 
                             상위시스템(WMS)과 자동화설비 시스템(ECS) 간 실시간 작업계획 최적화를 위한 WES 개발을 통해 
                             스마트 물류 시스템을 구축하고 있습니다. 이전에는 SAP eWM, TM 모듈 기반 물류정보시스템 구축을 
                             담당하며 조직의 전략적 혁신을 이끌어왔습니다. 동시에 학회 활동과 강의를 통해 지식을 공유하고, 
                             DEA-SBM 모형, 산업연관분석 등 정량적 방법론을 활용한 연구를 지속적으로 수행하고 있습니다.
                         </p>
-                        <p>주요 관심 분야:</p>
+                        <p data-i18n="about-interests">주요 관심 분야:</p>
                         <ul class="tech-list">
                         <li>Supply Chain Optimization</li>
                         <li>Logistics Efficiency Analysis</li>
@@ -101,65 +105,65 @@
         <section id="career" class="section">
             <h2 class="section-heading">
                 <span class="section-number">02.</span>
-                <span class="section-title">Where I've Worked</span>
+                <span class="section-title" data-i18n="experience-title">Where I've Worked</span>
             </h2>
             <div class="experience-container">
                 <div class="tab-list" role="tablist">
-                    <button class="tab-button active" data-tab="current">Current</button>
-                    <button class="tab-button" data-tab="past">Past</button>
+                    <button class="tab-button active" data-tab="current" data-i18n="tab-current">Current</button>
+                    <button class="tab-button" data-tab="past" data-i18n="tab-past">Past</button>
                 </div>
                 <div class="tab-content">
                     <div class="tab-panel active" id="current">
                         <div class="job">
-                            <h3 class="job-title">팀장 <span class="company">@ LX 판토스</span></h3>
-                            <p class="job-period">2016.05 - 현재</p>
+                            <h3 class="job-title"><span data-i18n="job-lx-title">팀장</span> <span class="company">@ <span data-i18n="company-lx">LX 판토스</span></span></h3>
+                            <p class="job-period">2016.05 - <span data-i18n="present">현재</span></p>
                             <ul class="job-description">
-                                <li><strong>2024.02 - 현재:</strong> 로봇/설비제어 WES(Warehouse Execution System), WCS(Warehouse Control System), ECS(Equipment Control System) 관련 시스템 구축
+                                <li><strong>2024.02 - <span data-i18n="present">현재</span>:</strong> <span data-i18n="job-lx-1">로봇/설비제어 WES(Warehouse Execution System), WCS(Warehouse Control System), ECS(Equipment Control System) 관련 시스템 구축</span>
                                     <ul class="job-description-sub">
-                                        <li>상위시스템(WMS)과 자동화설비 시스템(ECS) 간 실시간 작업계획 최적화를 위한 WES 개발 및 운영</li>
-                                        <li>WES는 WCS, Optimizer, ECS를 포괄하는 통합 자동화 제어 시스템 구축</li>
+                                        <li data-i18n="job-lx-1-1">상위시스템(WMS)과 자동화설비 시스템(ECS) 간 실시간 작업계획 최적화를 위한 WES 개발 및 운영</li>
+                                        <li data-i18n="job-lx-1-2">WES는 WCS, Optimizer, ECS를 포괄하는 통합 자동화 제어 시스템 구축</li>
                                     </ul>
                                 </li>
-                                <li><strong>2016.05 - 2024.01:</strong> SAP eWM(Extended Warehouse Management), TM(Transportation Management) 모듈 기반 물류정보시스템 구축 및 운영</li>
-                                <li><strong>2016.05 - 2019.02:</strong> 신사업발굴 및 해외영업 전략 수립</li>
-                                <li>경영혁신부문을 이끌며 조직의 전략적 혁신과 프로세스 개선을 주도</li>
-                                <li>물류 운영 효율성 향상을 위한 데이터 기반 의사결정 시스템 구축</li>
-                                <li>내부 컨설팅 및 교육 프로그램 기획 및 실행</li>
+                                <li><strong>2016.05 - 2024.01:</strong> <span data-i18n="job-lx-2">SAP eWM(Extended Warehouse Management), TM(Transportation Management) 모듈 기반 물류정보시스템 구축 및 운영</span></li>
+                                <li><strong>2016.05 - 2019.02:</strong> <span data-i18n="job-lx-3">신사업발굴 및 해외영업 전략 수립</span></li>
+                                <li data-i18n="job-lx-4">경영혁신부문을 이끌며 조직의 전략적 혁신과 프로세스 개선을 주도</li>
+                                <li data-i18n="job-lx-5">물류 운영 효율성 향상을 위한 데이터 기반 의사결정 시스템 구축</li>
+                                <li data-i18n="job-lx-6">내부 컨설팅 및 교육 프로그램 기획 및 실행</li>
                             </ul>
                         </div>
                         <div class="job">
-                            <h3 class="job-title">산업계 전문위원 <span class="company">@ 정보통신기획평가원(IITP)</span></h3>
-                            <p class="job-period">2025.04 - 현재</p>
+                            <h3 class="job-title"><span data-i18n="job-iitp-title">산업계 전문위원</span> <span class="company">@ <span data-i18n="company-iitp">정보통신기획평가원(IITP)</span></span></h3>
+                            <p class="job-period">2025.04 - <span data-i18n="present">현재</span></p>
                             <ul class="job-description">
-                                <li>디지털트윈 기술분야 공급망 트윈 신규사업 기획위원회 산업 전문가 위원 활동 (2026.01)</li>
-                                <li>온디바이스 AI 분야 신규사업 기획위원회 산업 전문가 위원 활동 (2025.04)</li>
-                                <li>정보통신 분야 프로젝트 평가 및 기술 검토</li>
-                                <li>산업계 관점에서의 정책 자문 제공</li>
+                                <li data-i18n="job-iitp-1">디지털트윈 기술분야 공급망 트윈 신규사업 기획위원회 산업 전문가 위원 활동 (2026.01)</li>
+                                <li data-i18n="job-iitp-2">온디바이스 AI 분야 신규사업 기획위원회 산업 전문가 위원 활동 (2025.04)</li>
+                                <li data-i18n="job-iitp-3">정보통신 분야 프로젝트 평가 및 기술 검토</li>
+                                <li data-i18n="job-iitp-4">산업계 관점에서의 정책 자문 제공</li>
                             </ul>
                         </div>
                         <div class="job">
-                            <h3 class="job-title">종신회원 <span class="company">@ 한국물류과학기술학회</span></h3>
-                            <p class="job-period">현재</p>
+                            <h3 class="job-title"><span data-i18n="job-lifetime-title">종신회원</span> <span class="company">@ <span data-i18n="company-logistics">한국물류과학기술학회</span></span></h3>
+                            <p class="job-period" data-i18n="present">현재</p>
                             <ul class="job-description">
-                                <li>학회 정책 및 연구 방향 논의에 참여</li>
-                                <li>후학 양성 및 학문 발전에 기여</li>
+                                <li data-i18n="job-lifetime-1">학회 정책 및 연구 방향 논의에 참여</li>
+                                <li data-i18n="job-lifetime-2">후학 양성 및 학문 발전에 기여</li>
                             </ul>
                         </div>
                     </div>
                     <div class="tab-panel" id="past">
                         <div class="job">
-                            <h3 class="job-title">PM, PL, 분석·설계 담당 <span class="company">@ LG CNS</span></h3>
-                            <p class="job-period">1996.12 - 2016.05 (19년 5개월)</p>
+                            <h3 class="job-title"><span data-i18n="job-lg-title">PM, PL, 분석·설계 담당</span> <span class="company">@ LG CNS</span></h3>
+                            <p class="job-period">1996.12 - 2016.05 <span data-i18n="job-lg-period">(19년 5개월)</span></p>
                             <ul class="job-description">
-                                <li><strong>2007.12 - 2016.05:</strong> 우정사업본부 RFID 구축, 우편집중국 통합서버 구축, LG전자 TMS 구축 등 대규모 프로젝트 리드</li>
-                                <li><strong>2004.08 - 2007.05:</strong> 미국 Wal*Mart, Best Buy 대응 RFID 구축, LG전자 창고최적화 시스템 구축, LG필립스LCD RFID 구축</li>
-                                <li><strong>2002.01 - 2004.07:</strong> 우정사업본부 우편물류통합정보시스템 1, 2단계 구축 (PL, 업무분석/설계)</li>
-                                <li><strong>2001.08 - 2001.12:</strong> LG전자 국내영업 마스터플랜 수립 (컨설팅)</li>
-                                <li><strong>2000.02 - 2001.07:</strong> 솔루션 비즈니스 체계화(SBF) 방법론 개발 및 적용</li>
-                                <li><strong>1997.04 - 1998.02:</strong> LG실트론 공정자동화 시스템 개발</li>
-                                <li>IT 프로젝트 전반의 기획, 관리 및 일정 관리</li>
-                                <li>비즈니스 요구사항 분석 및 시스템 설계</li>
-                                <li>다수의 해외법인 대상 프로젝트 수행 (영어 프리젠테이션 및 회의 진행)</li>
+                                <li><strong>2007.12 - 2016.05:</strong> <span data-i18n="job-lg-1">우정사업본부 RFID 구축, 우편집중국 통합서버 구축, LG전자 TMS 구축 등 대규모 프로젝트 리드</span></li>
+                                <li><strong>2004.08 - 2007.05:</strong> <span data-i18n="job-lg-2">미국 Wal*Mart, Best Buy 대응 RFID 구축, LG전자 창고최적화 시스템 구축, LG필립스LCD RFID 구축</span></li>
+                                <li><strong>2002.01 - 2004.07:</strong> <span data-i18n="job-lg-3">우정사업본부 우편물류통합정보시스템 1, 2단계 구축 (PL, 업무분석/설계)</span></li>
+                                <li><strong>2001.08 - 2001.12:</strong> <span data-i18n="job-lg-4">LG전자 국내영업 마스터플랜 수립 (컨설팅)</span></li>
+                                <li><strong>2000.02 - 2001.07:</strong> <span data-i18n="job-lg-5">솔루션 비즈니스 체계화(SBF) 방법론 개발 및 적용</span></li>
+                                <li><strong>1997.04 - 1998.02:</strong> <span data-i18n="job-lg-6">LG실트론 공정자동화 시스템 개발</span></li>
+                                <li data-i18n="job-lg-7">IT 프로젝트 전반의 기획, 관리 및 일정 관리</li>
+                                <li data-i18n="job-lg-8">비즈니스 요구사항 분석 및 시스템 설계</li>
+                                <li data-i18n="job-lg-9">다수의 해외법인 대상 프로젝트 수행 (영어 프리젠테이션 및 회의 진행)</li>
                             </ul>
                         </div>
                     </div>
@@ -179,7 +183,7 @@
                     <ul class="skill-tags">
                         <li>Supply Chain Management</li>
                         <li>Logistics Optimization</li>
-                        <li>SCM/물류 컨설팅</li>
+                        <li data-i18n="skill-scm">SCM/물류 컨설팅</li>
                         <li>Process Innovation</li>
                     </ul>
                 </div>
@@ -188,7 +192,7 @@
                     <ul class="skill-tags">
                         <li>DEA-SBM Analysis</li>
                         <li>Data Analysis</li>
-                        <li>산업연관분석</li>
+                        <li data-i18n="skill-input-output">산업연관분석</li>
                         <li>Demand Forecasting</li>
                         <li>Quantitative Research</li>
                     </ul>
@@ -206,9 +210,9 @@
                     <h3>Certifications</h3>
                     <ul class="skill-tags">
                         <li>CPIM (2001)</li>
-                        <li>물류관리사 (2022)</li>
-                        <li>정보처리기사 (1994)</li>
-                        <li>산업안전기사 (1992)</li>
+                        <li><span data-i18n="cert-logistics">물류관리사</span> (2022)</li>
+                        <li><span data-i18n="cert-info">정보처리기사</span> (1994)</li>
+                        <li><span data-i18n="cert-safety">산업안전기사</span> (1992)</li>
                         <li>RFID-GL (2009)</li>
                     </ul>
                 </div>
@@ -219,7 +223,7 @@
         <section id="research" class="section">
             <h2 class="section-heading">
                 <span class="section-number">04.</span>
-                <span class="section-title">Featured Research</span>
+                <span class="section-title" data-i18n="research-title">Featured Research</span>
             </h2>
             <div class="research-container">
                 <div class="research-item">
@@ -227,14 +231,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">학회발표: 화학산업과 AI, Digital Twin 물류</h3>
+                        <h3 class="research-title" data-i18n="research-1-title">학회발표: 화학산업과 AI, Digital Twin 물류</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2025</span>
-                        <span class="research-venue">한국공업화학회 (학회발표)</span>
+                        <span class="research-venue" data-i18n="research-1-venue">한국공업화학회 (학회발표)</span>
                     </div>
                     <p class="research-authors">노연호</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-1-desc">
                         화학산업에서의 AI와 Digital Twin 기술을 활용한 물류 혁신 방안에 대해 발표했습니다.
                     </p>
                 </div>
@@ -244,14 +248,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">산업연관분석을 활용한 교통부문 사회간접자본의 경제적 파급효과 변화 분석</h3>
+                        <h3 class="research-title" data-i18n="research-2-title">산업연관분석을 활용한 교통부문 사회간접자본의 경제적 파급효과 변화 분석</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2024</span>
-                        <span class="research-venue">대한교통학회 (학술지등록)</span>
+                        <span class="research-venue" data-i18n="research-2-venue">대한교통학회 (학술지등록)</span>
                     </div>
                     <p class="research-authors">김도훈, 노연호, 하헌구</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-2-desc">
                         산업연관분석 기법을 활용하여 교통 인프라 투자가 경제에 미치는 파급효과를 정량적으로 분석한 연구입니다.
                     </p>
                 </div>
@@ -261,14 +265,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">물류기업의 효율성 변화 비교 연구: DEA-SBM과 Meta-Frontier SBM을 활용하여</h3>
+                        <h3 class="research-title" data-i18n="research-3-title">물류기업의 효율성 변화 비교 연구: DEA-SBM과 Meta-Frontier SBM을 활용하여</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2024</span>
-                        <span class="research-venue">한국로지스틱스학회 (학회발표)</span>
+                        <span class="research-venue" data-i18n="research-3-venue">한국로지스틱스학회 (학회발표)</span>
                     </div>
                     <p class="research-authors">노연호</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-3-desc">
                         DEA-SBM과 Meta-Frontier SBM 모형을 활용하여 물류기업의 효율성 변화를 비교 분석한 연구입니다.
                     </p>
                 </div>
@@ -278,14 +282,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">DEA-SBM 모형을 활용한 국내외 물류기업의 재무 효율성 분석</h3>
+                        <h3 class="research-title" data-i18n="research-4-title">DEA-SBM 모형을 활용한 국내외 물류기업의 재무 효율성 분석</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2023</span>
-                        <span class="research-venue">한국로지스틱스학회 (학술지등록)</span>
+                        <span class="research-venue" data-i18n="research-4-venue">한국로지스틱스학회 (학술지등록)</span>
                     </div>
                     <p class="research-authors">노연호, 판황프엉우엔, 하헌구</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-4-desc">
                         DEA-SBM 모형을 통해 물류기업의 재무 효율성을 측정하고 국내외 기업 간 비교분석을 수행했습니다.
                     </p>
                 </div>
@@ -295,14 +299,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">코로나19 전후 국내외 물류기업의 재무 효율성 변화 비교 분석</h3>
+                        <h3 class="research-title" data-i18n="research-5-title">코로나19 전후 국내외 물류기업의 재무 효율성 변화 비교 분석</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2023</span>
-                        <span class="research-venue">한국SCM학회 (학회발표)</span>
+                        <span class="research-venue" data-i18n="research-5-venue">한국SCM학회 (학회발표)</span>
                     </div>
                     <p class="research-authors">노연호</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-5-desc">
                         코로나19 팬데믹 전후 물류기업의 재무 효율성 변화를 비교 분석하여 시사점을 도출한 연구입니다.
                     </p>
                 </div>
@@ -312,14 +316,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">논문 데이터 분석을 통한 물류분야 수요예측 연구 동향 분석</h3>
+                        <h3 class="research-title" data-i18n="research-6-title">논문 데이터 분석을 통한 물류분야 수요예측 연구 동향 분석</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2022</span>
-                        <span class="research-venue">한국물류과학기술학회</span>
+                        <span class="research-venue" data-i18n="research-6-venue">한국물류과학기술학회</span>
                     </div>
                     <p class="research-authors">노연호, 한명수, 하헌구</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-6-desc">
                         물류 분야 수요예측 연구의 동향을 문헌 데이터 분석을 통해 체계적으로 정리하고 향후 연구 방향을 제시했습니다.
                     </p>
                 </div>
@@ -329,14 +333,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">DEA-SBM 모형을 활용한 국내외 물류기업의 재무 효율성 비교 분석</h3>
+                        <h3 class="research-title" data-i18n="research-7-title">DEA-SBM 모형을 활용한 국내외 물류기업의 재무 효율성 비교 분석</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2019</span>
-                        <span class="research-venue">인하대학교 물류전문대학원</span>
+                        <span class="research-venue" data-i18n="research-7-venue">인하대학교 물류전문대학원</span>
                     </div>
                     <p class="research-authors">노연호</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-7-desc">
                         박사 학위 논문으로, 물류기업의 효율성을 정량적으로 평가하는 방법론을 제시하고 실증 분석을 수행했습니다.
                     </p>
                 </div>
@@ -346,14 +350,14 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                         </svg>
-                        <h3 class="research-title">솔루션 비즈니스 체계화 방법론을 활용한 SI 솔루션 품질 향상</h3>
+                        <h3 class="research-title" data-i18n="research-8-title">솔루션 비즈니스 체계화 방법론을 활용한 SI 솔루션 품질 향상</h3>
                     </div>
                     <div class="research-meta">
                         <span class="research-year">2001</span>
-                        <span class="research-venue">한국경영과학회</span>
+                        <span class="research-venue" data-i18n="research-8-venue">한국경영과학회</span>
                     </div>
                     <p class="research-authors">정세호, 노연호, 최형호</p>
-                    <p class="research-description">
+                    <p class="research-description" data-i18n="research-8-desc">
                         시스템 통합 솔루션의 품질 향상을 위한 체계적인 방법론을 제시하고 적용 사례를 분석했습니다.
                     </p>
                 </div>
@@ -364,21 +368,21 @@
         <section id="lectures" class="section">
             <h2 class="section-heading">
                 <span class="section-number">05.</span>
-                <span class="section-title">Teaching & Lectures</span>
+                <span class="section-title" data-i18n="lectures-title">Teaching & Lectures</span>
             </h2>
             <div class="lectures-container">
                 <div class="lecture-group">
                     <h3>University Lectures</h3>
                     <div class="lecture-item">
-                        <span class="institution">인하대학교, 건국대학교</span>
-                        <p>IT기본, SCM/물류, DT/AX 포럼 및 강의</p>
+                        <span class="institution" data-i18n="lecture-uni">인하대학교, 건국대학교</span>
+                        <p data-i18n="lecture-uni-desc">IT기본, SCM/물류, DT/AX 포럼 및 강의</p>
                     </div>
                 </div>
                 <div class="lecture-group">
                     <h3>Corporate Training</h3>
                     <div class="lecture-item">
-                        <span class="institution">LG CNS, LX 판토스</span>
-                        <p>SCM/물류 기초·심화과정, 신입사원 비즈니스 매너, 컨설팅 스킬 등 사내 교육</p>
+                        <span class="institution" data-i18n="lecture-corp">LG CNS, LX 판토스</span>
+                        <p data-i18n="lecture-corp-desc">SCM/물류 기초·심화과정, 신입사원 비즈니스 매너, 컨설팅 스킬 등 사내 교육</p>
                     </div>
                 </div>
             </div>
@@ -388,25 +392,25 @@
         <section id="contact" class="section">
             <h2 class="section-heading">
                 <span class="section-number">06.</span>
-                <span class="section-title">Get In Touch</span>
+                <span class="section-title" data-i18n="contact-title">Get In Touch</span>
             </h2>
             <div class="contact-content">
-                <p>
+                <p data-i18n="contact-description">
                     새로운 프로젝트나 협업 기회에 대해 이야기하고 싶으시다면 언제든지 연락 주세요.
                 </p>
-                <a href="mailto:wesleyroh@naver.com" class="contact-button">Say Hello</a>
+                <a href="mailto:wesleyroh@naver.com" class="contact-button" data-i18n="contact-button">Say Hello</a>
                 <div class="contact-info">
                     <div class="contact-item">
-                        <span class="contact-label">Phone</span>
+                        <span class="contact-label" data-i18n="contact-phone">Phone</span>
                         <a href="tel:010-2322-8010" class="contact-value">010-2322-8010</a>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label">Email</span>
+                        <span class="contact-label" data-i18n="contact-email">Email</span>
                         <a href="mailto:wesleyroh@naver.com" class="contact-value">wesleyroh@naver.com</a>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-label">Location</span>
-                        <span class="contact-value">경기도 용인시 기흥구</span>
+                        <span class="contact-label" data-i18n="contact-location">Location</span>
+                        <span class="contact-value" data-i18n="location-value">경기도 용인시 기흥구</span>
                     </div>
                 </div>
             </div>
@@ -414,12 +418,10 @@
 
         <!-- Footer -->
         <footer class="footer">
-            <p>Designed & Built by 노연호</p>
+            <p>Designed & Built by Wesley Yonho Roh</p>
             <p class="footer-note">Inspired by Brittany Chiang's Portfolio</p>
         </footer>
     </main>
     <script src="script.js"></script>
 </body>
 </html>
-
-
