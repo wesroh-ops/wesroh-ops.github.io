@@ -14,6 +14,20 @@
 | `노연호.jpg` | 프로필 이미지 |
 | `자기소개.txt` | 소개 문구 초안·참고용 텍스트 |
 
+## 문서화 (Antigravity 표준 적용 범위)
+
+프로젝트 구조·아키텍처·진행 상황·가이드·트러블슈팅은 **[doc/README.md](doc/README.md)** 아래에서 관리합니다.
+
+| 경로 | 내용 |
+|------|------|
+| [doc/design/](doc/design/) | 아키텍처·Mermaid 다이어그램 |
+| [doc/project/](doc/project/) | 마일스톤·백로그 |
+| [doc/guide/](doc/guide/) | 로컬 개발·편집 규칙 |
+| [doc/issue/](doc/issue/) | 배포·i18n 등 이슈 로그 |
+| [infra/README.md](infra/README.md) | GitHub Pages 기준 인프라 범위 안내 |
+
+> SvelteKit / FastAPI / MongoDB / Docker Compose 기반 **풀스택 보일러플레이트**는 이 저장소의 배포 방식과 맞지 않아 기본 구성에 포함하지 않았습니다. 필요 시 별도 저장소로 스캐폴딩하는 것을 권장합니다.
+
 ## 기술 스택
 
 - HTML5  
